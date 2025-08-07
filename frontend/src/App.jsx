@@ -1,28 +1,12 @@
 import './App.css'
+import {MovieCard} from './components/MOvieCard'
 
 function App() {
   return (
     <>
-    <AnotherText></AnotherText> #another way
-    <Text display="You got this"/>
-    <Text display="Let's go"/>
+      <MovieCard movie={{title: "Tim's Film", release_date: "2024"}}/>
+      <MovieCard movie={{title: "Joe's Film", release_date: "2020"}}/>
     </>
-  )
-}
-
-function Text({display}) {
-  return (
-    <div>
-      <p>{display}</p>
-    </div>
-  )
-}
-
-function AnotherText() {
-  return (
-    <div>
-      <p>A whole new World</p>
-    </div>
   )
 }
 
